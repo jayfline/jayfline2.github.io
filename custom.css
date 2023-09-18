@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #444444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: auto;
+  margin: 0px 40px 0px 40px;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 500px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* Styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+
+a:active {
+  background-color: gainsboro;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  margin: 10px 30px 0 0;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+.btn-absolute {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 70px;
+  right: 0px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+.top {
+  position: relative;
+}
+
+.top::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+article header p {
+  font-style: italic;
+}
+
+/* BLOG SECTION */
+.table-blog {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-blog td,
+.table-blog th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-blog tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-blog tr:hover {
+  background-color: #ddd;
+}
+
+.table-blog th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1098ad;
+  color: white;
+}
+
+/* CONTACT SECTION */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .contact-us {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  background-color: #ffe7;
+}
+main .contact-us .nama-lengkap,
+main .contact-us .alamat-email,
+main .contact-us .pesan {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main .contact-us .Kategori,
+main .contact-us .konfirmasi {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+main .contact-us .Kategori div {
+  display: flex;
+  align-items: center;
+}
+
+main .contact-us .Kategori div label {
+  font-size: small;
+  margin-left: 5px;
+  margin-right: 25px;
+}
+
+main .contact-us .Kategori div input {
+  width: 20px;
+  height: 20px;
+}
+
+main .contact-us .nama-lengkap input,
+main .contact-us .alamat-email input,
+main .contact-us .pesan textarea {
+  height: 40px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+}
+
+main .contact-us .konfirmasi {
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .contact-us .konfirmasi label {
+  font-size: small;
+  margin-left: -5px;
+  margin-right: 10px;
+}
+
+main .contact-us .konfirmasi input {
+  width: 25px;
+  height: 25px;
+}
+
+main .contact-us .submit {
+  color: #ddd;
+  background-color: #1098ad;
+  margin-top: 20px;
+  font-size: medium;
+  padding: 15px 30px 15px 30px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+/* CHALLENGES SECTION */
+article p strong {
+  color: #1098ad;
+}
+
+/* CHALLENGES SECTION */
+.container-login {
+  margin: 0px 50px 0px 50px 0px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.container-login fieldset {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0px 30px 0px 30px;
+  border: none;
+  width: 100%;
+}
+
+.container-login fieldset .title {
+  align-self: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #1098ad;
+}
+
+.container-login fieldset form {
+  width: 100%;
+  margin-top: 30px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-login fieldset form label {
+  font-size: medium;
+  align-self: flex-start;
+}
+
+.container-login fieldset form input {
+  height: 40px;
+  width: 100%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid black;
+}
+
+.container-login fieldset form button {
+  display: block;
+  margin: 0 auto;
+  color: #ddd;
+  background-color: #1098ad;
+  margin-top: 20px;
+  font-size: medium;
+  padding: 15px 30px 15px 30px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.container-login fieldset form select {
+  width: 100%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid black;
+}
